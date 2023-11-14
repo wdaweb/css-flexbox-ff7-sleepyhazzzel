@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ff7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: url(./bg-full.jpg) center no-repeat;
+        }
+
+        .full-bg {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            height: 80vh;
+            border: 0.5px solid #aaa;
+            box-shadow: 0 0 15px #000;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .left {
+            flex: 1;
+            background: url(./main.jpg) center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sale {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sale img {
+            width: 40%;
+        }
+
+        h1 {
+            font: 36px "Arial";
+            color: #fff;
+            line-height: 48px;
+        }
+
+        p {
+            font: 18px sans-serif;
+            color: #fff;
+            line-height: 26px;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-top,
+        .right-bottom {
+            flex: 1;
+        }
+
+        .right-top {
+            background: #aaa url(./cloud.png) bottom right/auto 90% no-repeat;
+            padding: 0 30px;
+        }
+
+        .right-bottom {
+            background: #000 url(./tifa.png) bottom left 10px/auto 90% no-repeat;
+            padding: 0 30px;
+        }
+
+        .text {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-bg">
+        <div class="container">
+            <div class="left">
+                <div class="sale">
+                    <img src="./ps4-ff7.png" alt="ps4-ff7">
+                    <h1 style="text-transform: uppercase;">Available Now</h1>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        architecto nihil doloribus
+                        maiores
+                        ipsam temporibus nostrum, nemo iste aperiam eum corporis fuga deserunt optio fugiat nulla unde
+                        voluptatibus aliquid!</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-top right-top-img">
+                    <div class="text">
+                        <h1 style="color: #000;">Cloud</h1>
+                        <p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                            distinctio
+                            quae aliquid
+                            facilis, ipsam labore aut culpa esse a porro, odit laborum laudantium rem veniam fuga
+                            necessitatibus debitis.</p>
+                    </div>
+                </div>
+                <div class="right-bottom right-bottom-img">
+                    <div class="text" style="margin-left: 40%;">
+                        <h1>Tifa</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ut voluptatum eius nobis cum
+                            qui odit dolorum ipsa velit voluptatibus repellendus quas, quam autem debitis perspiciatis
+                            neque sed nemo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
